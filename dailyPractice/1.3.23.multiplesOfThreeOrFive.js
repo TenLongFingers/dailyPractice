@@ -5,14 +5,12 @@
 
 function solution(number) {
   let sum = 0;
-  for (let i = 0; i < number; i++) {
-    if (i % 3 || i % 5) {
+  for (let i = 1; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
       sum += i;
     }
-    console.log(sum);
   }
-  //loop through all numbers under number {
-  // if divisible by 3 OR 5, increment sum by divisible number}
+  return sum;
 }
 
 console.log(solution(10));
