@@ -4,7 +4,15 @@
 // Note: If the number is a multiple of both 3 and 5, only count it once.
 
 function solution(number) {
-  //let sum = 0
+  let sum = 0;
+  for (let i = 0; i < number; i++) {
+    if (i % 3 || i % 5) {
+      sum += i;
+    }
+    console.log(sum);
+  }
   //loop through all numbers under number {
   // if divisible by 3 OR 5, increment sum by divisible number}
 }
+
+console.log(solution(10));
